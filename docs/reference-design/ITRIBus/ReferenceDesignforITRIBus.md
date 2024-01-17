@@ -5,8 +5,8 @@ This document elaborates the hardware and software configurations for using Auto
 
 # Design Overview: 
 
-![Meta Chart for F1Tenth Design](F1Tenth_Meta.png)
-![Tech Chart for F1Tenth Design](F1Tenth_Tech.png)
+![Meta Chart for ITRI Bus Design](ITRIBus_Meta.png)
+![Tech Chart for ITRI Bus Design](ITRIBus_Tech.png)
 
 
 # Who should read: 

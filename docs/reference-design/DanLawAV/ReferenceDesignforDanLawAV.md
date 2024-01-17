@@ -5,8 +5,8 @@ This document elaborates the hardware and software configurations for using Auto
 
 # Design Overview: 
 
-![Meta Chart for F1Tenth Design](F1Tenth_Meta.png)
-![Tech Chart for F1Tenth Design](F1Tenth_Tech.png)
+![Meta Chart for DanLaw's AV Design](DanLawAV_Meta.png)
+![Tech Chart for DanLaw's AV Design](DanLawAV_Tech.png)
 
 
 # Who should read: 
@@ -18,22 +18,13 @@ One is interested in building your autonomous racing cars or low-cost platforms 
 
 
 # Contributors: [complete list](https://f1tenth.readthedocs.io/en/foxy_test/support/acknowledgment.html#contributors)
-## F1TENTH Core Developers
-- Hongrui (Billy) Zheng
-- Johannes Betz
+## Core Developers
+- Firstname Lastname
 ## Contributors
-- Matthew O’Kelly
-- Kim Luong
-- Haoru Xue
-- Joshua Whitley
-- F1TENTH Lehigh and Rosa Zheng
-- F1TENTH UCSD and Jack Silberman
-- Jim Benson
+- Firstname Lastname
 
 # Community Outreach
-- Rahul Mangharam
-- F1TENTH Clemson and Venkat Krovi
-- Jaroslav Klapálek
+- Firstname Lastname
 
 # Targeted Use Cases
 
