@@ -3,5 +3,10 @@
     "version": "reference-design-documents",
     "title": "reference-design-documents",
     "aliases": []
+  },
+  {
+    "version": "latest",
+    "title": "latest",
+    "aliases": []
   }
 ]
