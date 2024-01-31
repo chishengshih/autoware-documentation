@@ -16,7 +16,7 @@ One is interested in building autonomous cars for taxi service and looking for a
 - Complete LeoDrive RoboTaxi design documents: [link](https://leodrive.atlassian.net/wiki/spaces/MD/pages/97583105/Overview+of+Reference+Design)
 - Feature list of LeoDrive RoboTaxi: [link](https://leodrive.atlassian.net/wiki/spaces/MD/pages/104071185/Autonomous+Driving+Feature+List)
 
-# Contributors: [complete list](https://f1tenth.readthedocs.io/en/foxy_test/support/acknowledgment.html#contributors)
+# Contributors: [complete list]()
 ## Core Developers
 - Mert Çolak
 
@@ -30,7 +30,7 @@ One is interested in building autonomous cars for taxi service and looking for a
 
 | Use Cases: | Education | Racing | PoC | Open AD Kit | Commercial Services/Production |
 |:--------: | :--------:| :---------: | :---------: |:---------: | :---------: |
-|F1Tenth | <input type="checkbox" checked />  | <input type="checkbox" checked />  | <input type="checkbox" disabled  />  | <input type="checkbox" disabled  />  | <input type="checkbox" checked /> | 
+| LeoDrive RoboTaxi | <input type="checkbox" checked />  | <input type="checkbox" checked />  | <input type="checkbox" disabled  />  | <input type="checkbox" disabled  />  | <input type="checkbox" checked /> | 
 
 # ODD
 
@@ -52,38 +52,26 @@ The Robo-Taxi Reference Design is designed to offer efficient, safe, and conveni
 
 # Hardware Configuration
 ## Chassis:
--  Traxxas Slash 4x4 Premium: [link to purchase](https://www.amainhobbies.com/traxxas-slash-4x4-ultimate-rtr-4wd-short-course-truck-orange-tra68077-4-orng/p858530)
-- VESC Speed Controllers: # VESC 6 MK III
+- (To-be-added)
   
 ![LeoTaxi_SysArchitecture.png](LeoTaxi_SysArchitecture.png)
 
 ## Sensors:
-- Lidar: choose one
-	- Hokuyo UTM-30LX
-	- Hokuyo 10LX
-- Camera (optional):
-	- ZED 2
-	- Intel Real Sense
+(To-be-Updated)
+- Lidar:
+- Camera: 
+- GPS-RTK: 
+- IMU:
   
 ![[LeoTaxi_Sensors.png]]
 
 ## Computing Platforms:
-- NVIDIA Jetson Xavier NX
-- USB Hub (4 ports)
-- (DEPRECATED) NVIDIA Jetson TX2
+(To-be-Updated)
+
 
 ![LeoTaxi_SysArchitecture.png](LeoTaxi_SysArchitecture.png)
 
 # Software Configuration 
 - Software on the car:
-	- Operating System: Linux 20.04
-	- ROS: [ROS2 galactic](https://docs.ros.org/en/galactic/Installation/Ubuntu-Install-Debians.html)
-	- GPU Driver: nVidia: JetPack 5.1.1 (rev. 1)
-	- [Autoware](https://github.com/autowarefoundation/autoware.git)
-	- SLAM Toolbox to create and edit map: ros-galactic-slam-toolbox
-- Tools: 
-	- Simulator: [f1tenth simulator](https://f1tenth.readthedocs.io/en/foxy_test/going_forward/simulator/index.html)
-	- VESC Tool for motor control: [link](https://vesc-project.com/vesc_tool)
-	- Version Control tool: [vcstool](https://github.com/dirk-thomas/vcstool)
-
+- Tools:
 ![LeoTaxi_Software.png](LeoTaxi_Software.png)
