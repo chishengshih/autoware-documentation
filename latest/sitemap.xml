@@ -1201,6 +1201,41 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://chishengshih.github.io/autoware-documentation/latest/reference-design/</loc>
+         <lastmod>2024-01-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chishengshih.github.io/autoware-documentation/latest/reference-design/metrics/</loc>
+         <lastmod>2024-01-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chishengshih.github.io/autoware-documentation/latest/reference-design/DanLawAV/ReferenceDesignforDanLawAV/</loc>
+         <lastmod>2024-01-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chishengshih.github.io/autoware-documentation/latest/reference-design/F1Tenth/ReferenceDesignforF1TenthwithAutoware/</loc>
+         <lastmod>2024-01-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chishengshih.github.io/autoware-documentation/latest/reference-design/GoKart/ReferenceDesignforGo-KartwithAutoware/</loc>
+         <lastmod>2024-01-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chishengshih.github.io/autoware-documentation/latest/reference-design/ITRIBus/ReferenceDesignforITRIBus/</loc>
+         <lastmod>2024-01-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://chishengshih.github.io/autoware-documentation/latest/reference-design/LeoTaxi/ReferenceDesignforLeoTaxi/</loc>
+         <lastmod>2024-01-31</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://chishengshih.github.io/autoware-documentation/latest/reference-hw/</loc>
          <lastmod>2024-01-31</lastmod>
          <changefreq>daily</changefreq>
