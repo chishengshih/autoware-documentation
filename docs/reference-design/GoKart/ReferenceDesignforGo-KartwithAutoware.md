@@ -7,7 +7,15 @@ This document elaborates the hardware and software configurations for using Auto
 
 ![Meta-Info Radar Chart for Go-Kart Design](MetaRadarChart-GoKart.png)
 
+## Note 
+- Maturity: Currently the go-kart has only been tested by us in closed regions. HUMDA is replicating our vehicle and will be testing in closed regions once they finish building (maturity will become 1).
+- Hardware Requirement: The current design uses a laptop for computing though we are considering the options of switching to a Jetson Orin Nano or an OpenAD Kit enabled platform.
+- Software Requirement: No containerization is required.
+
 ![Tech Feature Radar Chart for Go-Kart Design](TechRadarChart-GoKart.png)
+## Note: 
+- Distance between Disengagement: We have not specifically tested the distance between disengagement. In a closed track it may go indefinitely until the battery runs out.
+- Power Consumption: Typical power consumption in our test is less than 1000W though the vehicle can technically go much faster and draw more power. The best we have achieved was having no disengagement for 5 laps at the Purdue Grand Prix Track ( > 2km total distance) at the competition. We stopped the vehicle because it reached the lap limit though it could go farther if not stopped."
 
 # Who should read: 
 One is interested in building your small size autonomous vehicles and looks for the place to start with. 
@@ -45,7 +53,7 @@ One is interested in building your small size autonomous vehicles and looks for 
 
 Autonomous Go-Kart is a one-third scale autonomous go-kart autonomous vehicle for development and prototyping purpose. It can be used for developing and testing software components in Autoware. 
 
-![System Architecture](avev_gokart.webp)
+![System-Architecture](avev_gokart.png)
 
 # Hardware Configuration
 ## Chassis:
