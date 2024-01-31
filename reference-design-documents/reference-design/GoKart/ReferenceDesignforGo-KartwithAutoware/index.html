@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://autowarefoundation.github.io/autoware-documentation/reference-design-documents/reference-design/GoKart/ReferenceDesignforGo-KartwithAutoware/">
+        <link rel="canonical" href="https://chishengshih.github.io/autoware-documentation/reference-design-documents/reference-design/GoKart/ReferenceDesignforGo-KartwithAutoware/">
       
       
         <link rel="prev" href="../../F1Tenth/ReferenceDesignforF1TenthwithAutoware/">
@@ -6685,7 +6685,18 @@
 <p>This document elaborates the hardware and software configurations for using Autoware for autonomous driving. Hence, it will serve as a guideline to select hardware and software components to build autonomous vehicles. However, this document is NOT prepared as neither step-by-step instructions nor Q&amp;A books, which will be provided as a reference link if available. </p>
 <h1 id="design-overview">Design Overview:<a class="headerlink" href="#design-overview" title="Permanent link">#</a></h1>
 <p><img alt="Meta-Info Radar Chart for Go-Kart Design" src="../MetaRadarChart-GoKart.png"></p>
+<h2 id="note">Note<a class="headerlink" href="#note" title="Permanent link">#</a></h2>
+<ul>
+<li>Maturity: Currently the go-kart has only been tested by us in closed regions. HUMDA is replicating our vehicle and will be testing in closed regions once they finish building (maturity will become 1).</li>
+<li>Hardware Requirement: The current design uses a laptop for computing though we are considering the options of switching to a Jetson Orin Nano or an OpenAD Kit enabled platform.</li>
+<li>Software Requirement: No containerization is required.</li>
+</ul>
 <p><img alt="Tech Feature Radar Chart for Go-Kart Design" src="../TechRadarChart-GoKart.png"></p>
+<h2 id="note_1">Note:<a class="headerlink" href="#note_1" title="Permanent link">#</a></h2>
+<ul>
+<li>Distance between Disengagement: We have not specifically tested the distance between disengagement. In a closed track it may go indefinitely until the battery runs out.</li>
+<li>Power Consumption: Typical power consumption in our test is less than 1000W though the vehicle can technically go much faster and draw more power. The best we have achieved was having no disengagement for 5 laps at the Purdue Grand Prix Track ( &gt; 2km total distance) at the competition. We stopped the vehicle because it reached the lap limit though it could go farther if not stopped."</li>
+</ul>
 <h1 id="who-should-read">Who should read:<a class="headerlink" href="#who-should-read" title="Permanent link">#</a></h1>
 <p>One is interested in building your small size autonomous vehicles and looks for the place to start with. </p>
 <h1 id="references-and-resources">References and Resources:<a class="headerlink" href="#references-and-resources" title="Permanent link">#</a></h1>
@@ -6776,7 +6787,7 @@
 </table>
 <h1 id="system-architecture">System Architecture<a class="headerlink" href="#system-architecture" title="Permanent link">#</a></h1>
 <p>Autonomous Go-Kart is a one-third scale autonomous go-kart autonomous vehicle for development and prototyping purpose. It can be used for developing and testing software components in Autoware. </p>
-<p><img alt="System Architecture" src="avev_gokart.webp"></p>
+<p><img alt="System-Architecture" src="../avev_gokart.png"></p>
 <h1 id="hardware-configuration">Hardware Configuration<a class="headerlink" href="#hardware-configuration" title="Permanent link">#</a></h1>
 <h2 id="chassis">Chassis:<a class="headerlink" href="#chassis" title="Permanent link">#</a></h2>
 <ul>
@@ -6794,6 +6805,16 @@
 </ul>
 <p><img alt="GoKart-ComputeSensing.png" src="../GoKart-ComputeSensing.png"></p>
 <h1 id="software-configuration">Software Configuration<a class="headerlink" href="#software-configuration" title="Permanent link">#</a></h1>
+<p>The Go-Kart project has significant planning and other high level navigation components which require understanding of the compute system and how it’s setup. The required software includes the following:</p>
+<ul>
+<li>SolidWorks</li>
+<li>VSCode or editor of your choice</li>
+<li>STM32CubeIDE</li>
+<li>VESC tool</li>
+<li>Altium Designer</li>
+<li>3D printer software like MakerBot</li>
+</ul>
+<p>The complete software configuration can be found at <a href="https://go-kart-upenn.readthedocs.io/en/latest/Build-the-Kart/Software/index.html">this page</a></p>
 <!-- prettier-ignore --></div>
 
 
