@@ -70,3 +70,14 @@ Autonomous Go-Kart is a one-third scale autonomous go-kart autonomous vehicle fo
 ![GoKart-ComputeSensing.png](GoKart-ComputeSensing.png)
 
 # Software Configuration 
+
+The Go-Kart project has significant planning and other high level navigation components which require understanding of the compute system and how it’s setup. The required software includes the following:
+
+- SolidWorks
+- VSCode or editor of your choice
+- STM32CubeIDE
+- VESC tool
+- Altium Designer
+- 3D printer software like MakerBot
+
+The complete software configuration can be found at [this page](https://go-kart-upenn.readthedocs.io/en/latest/Build-the-Kart/Software/index.html)
