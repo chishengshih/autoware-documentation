@@ -35,7 +35,7 @@ If not, please, follow [Manual downloading of artifacts](https://github.com/auto
 
 ## Basic simulations
 
-!!! info [Using Autoware Launch GUI](#using-autoware-launch-gui)
+!!! info "[Using Autoware Launch GUI](#using-autoware-launch-gui)"
 
     If you prefer a graphical user interface (GUI) over the command line for launching and managing your simulations, refer to the `Using Autoware Launch GUI` section at the end of this document for a step-by-step guide.
 
@@ -102,6 +102,16 @@ After that, you can see `AUTONOMOUS` sign on `OperationMode` and `AUTO` button i
 3. After that, the vehicle will reverse into the destination parking spot.
 
    ![parking-maneuver](images/planning/parking/parking-maneuver.png)
+
+### Pull out and pull over scenario
+
+1. In a pull out scenario, set the ego vehicle at the road shoulder.
+
+   ![pullover-pullout](images/planning/pullover-pullout/pullover-pullout.jpg)
+
+2. Set a goal and then engage the ego vehicle.
+
+3. In a pull over scenario, similarly set the ego vehicle in a lane and set a goal on the road shoulder.
 
 ### Lane change scenario
 
