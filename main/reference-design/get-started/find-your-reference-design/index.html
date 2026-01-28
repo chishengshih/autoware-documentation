@@ -13847,10 +13847,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#reference-configurations" class="md-nav__link">
+  <a href="#example-production-platforms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Reference Configurations
+        Example Production Platforms
       
     </span>
   </a>
@@ -13858,110 +13858,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#real-world-examples-by-configuration" class="md-nav__link">
+  <a href="#reference-conceptual-design-guidelines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Real World Examples by Configuration
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Real World Examples by Configuration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#campus-configuration" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Campus Configuration
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#development-platforms" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Development Platforms
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#decision-criteria-reference" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Decision Criteria Reference
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Decision Criteria Reference">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#by-environment" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By Environment
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#by-speed-requirement" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By Speed Requirement
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#by-budget" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        By Budget
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-example-designs" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Example Designs
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next Steps
+        Reference Conceptual Design Guidelines
       
     </span>
   </a>
@@ -14046,7 +13946,7 @@
     Q1 --&gt;|TRL-6 or less| Q2{Environment?}
     Q1 --&gt;|TRL-7 or higher| Example[See Example Production Platforms]
 
-    Q2 --&gt;|Indoor only| INDOOR[LSA]
+    Q2 --&gt;|Indoor only| INDOOR[LSA/Racing robots/Go-Kart]
     Q2 --&gt;|Outdoor| Q3{Location}
     Q2 --&gt;|Mixed indoor/outdoor| INDOOR[LSA]
 
@@ -14055,11 +13955,46 @@
     Q3 --&gt;|Closed Campus| INDOOR[LSA]
     Q3 --&gt;|Highway| PoV[PoV Reference Design]
 
-    Q4 --&gt;|Large Size| Bus[ITRIBus]
+    Q4 --&gt;|Large Size| Bus[Bus]
     Q4 --&gt;|SedanSize| Taxi[RoboTaxi]
 </code></pre>
 <hr>
-<h2 id="reference-configurations">Reference Configurations<a class="headerlink" href="#reference-configurations" title="Permanent link">#</a></h2>
+<h2 id="example-production-platforms">Example Production Platforms<a class="headerlink" href="#example-production-platforms" title="Permanent link">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Configuration</th>
+<th>Best For</th>
+<th>Environment</th>
+<th>Localization</th>
+<th>Key Feature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="">KingWayTek Micro LSV</a></td>
+<td>Mixed traffic flows and low budget</td>
+<td>Paved, GPS available</td>
+<td>RTK <abbr title="Global Navigation Satellite System">GNSS</abbr></td>
+<td>Balanced cost/capability</td>
+</tr>
+<tr>
+<td><a href="./itri-bus/">Bus</a></td>
+<td>Shuttle Services for fixed route</td>
+<td>Paved, GPS available</td>
+<td>RTK <abbr title="Global Navigation Satellite System">GNSS</abbr></td>
+<td>Comfortable and safe ride</td>
+</tr>
+<tr>
+<td><a href="">RoboTaxi</a></td>
+<td>Point-to-Point On-Demand Services</td>
+<td>Paved, GPS available</td>
+<td>RTK <abbr title="Global Navigation Satellite System">GNSS</abbr></td>
+<td>Comfortable and safe ride</td>
+</tr>
+</tbody>
+</table>
+<h2 id="reference-conceptual-design-guidelines">Reference Conceptual Design Guidelines<a class="headerlink" href="#reference-conceptual-design-guidelines" title="Permanent link">#</a></h2>
 <p>These are conceptual configurations optimized for different deployment scenarios. Each defines recommended components, performance targets, and <abbr title="Operational Design Domain">ODD</abbr> coverage.</p>
 <table>
 <thead>
@@ -14073,484 +14008,49 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../build-examples/#campus-configuration">Campus</a></td>
-<td>Standard outdoor deployment</td>
+<td><a href="[build-examples.md#campus-configuration](https://autowarefoundation.github.io/LSA-reference-design-docs/main/)">LSA</a></td>
+<td>Mixed traffic flows and low budget</td>
 <td>Paved, GPS available</td>
 <td>RTK <abbr title="Global Navigation Satellite System">GNSS</abbr></td>
 <td>Balanced cost/capability</td>
 </tr>
 <tr>
-<td><a href="../build-examples/#indoor-configuration">Indoor</a></td>
-<td>Warehouse, factory</td>
-<td>GPS-denied</td>
-<td>LiDAR <abbr title="Simultaneous Localization And Mapping">SLAM</abbr> + markers</td>
-<td>No <abbr title="Global Navigation Satellite System">GNSS</abbr> dependency</td>
-</tr>
-<tr>
-<td><a href="../build-examples/#high-performance-configuration">High-Performance</a></td>
-<td>Research, complex scenarios</td>
-<td>Any</td>
-<td><abbr title="Global Navigation Satellite System">GNSS</abbr> + <abbr title="Simultaneous Localization And Mapping">SLAM</abbr> fusion</td>
-<td>Maximum capability</td>
-</tr>
-<tr>
-<td><a href="../build-examples/#budget-configuration">Budget</a></td>
-<td>Prototyping, simple routes</td>
+<td><a href="[build-examples.md#indoor-configuration](https://autowarefoundation.github.io/autoware.pov-reference-design-docs/main/)">PoV</a></td>
+<td>Highway</td>
 <td>Paved, GPS available</td>
+<td>RTK <abbr title="Global Navigation Satellite System">GNSS</abbr></td>
+<td>End-to-End Machine Learning Pipeline</td>
+</tr>
+<tr>
+<td><a href="">Off-road</a></td>
+<td>Racing, education, and research</td>
+<td>Unpaved, GPS available</td>
 <td>Single <abbr title="Global Navigation Satellite System">GNSS</abbr></td>
-<td>Cost-optimized</td>
+<td>No map and AI-enabled</td>
 </tr>
 <tr>
-<td><a href="../build-examples/#compact-configuration">Compact</a></td>
-<td>Small vehicles</td>
-<td>Indoor/outdoor</td>
-<td>Camera <abbr title="Simultaneous Localization And Mapping">SLAM</abbr></td>
-<td>Space-constrained</td>
-</tr>
-</tbody>
-</table>
-<p>For detailed component specifications, see <a href="../build-examples/">Design Choices by Example</a>.</p>
-<hr>
-<h2 id="real-world-examples-by-configuration">Real World Examples by Configuration<a class="headerlink" href="#real-world-examples-by-configuration" title="Permanent link">#</a></h2>
-<h3 id="campus-configuration">Campus Configuration<a class="headerlink" href="#campus-configuration" title="Permanent link">#</a></h3>
-<p>These production deployments demonstrate the Campus configuration in action:</p>
-<h4 id="taltech-iseauto">TalTech iseAuto<a class="headerlink" href="#taltech-iseauto" title="Permanent link">#</a></h4>
-<p>Campus shuttle at Tallinn University of Technology, Estonia.</p>
-<table>
-<thead>
-<tr>
-<th>Aspect</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Platform</strong></td>
-<td>Custom electric shuttle</td>
+<td><a href="">Trunk</a></td>
+<td>Heavy duty vehicles</td>
+<td>Outdoor</td>
+<td>RTK <abbr title="Global Navigation Satellite System">GNSS</abbr></td>
+<td></td>
 </tr>
 <tr>
-<td><strong>Sensors</strong></td>
-<td>3D LiDARs, automotive cameras, <abbr title="Global Navigation Satellite System">GNSS</abbr>/<abbr title="Inertial Measurement Unit">IMU</abbr></td>
+<td><a href="">Racier</a></td>
+<td>Racing and Education</td>
+<td>Indoor tracks</td>
+<td>No</td>
+<td>Racing robots using Autoware</td>
 </tr>
 <tr>
-<td><strong>Connectivity</strong></td>
-<td>Private 5G network</td>
-</tr>
-<tr>
-<td><strong>Status</strong></td>
-<td>Regular public transport service on campus</td>
+<td><a href="">Go-Kart</a></td>
+<td>Racing and Development</td>
+<td>Outdoor</td>
+<td>RTK <abbr title="Global Navigation Satellite System">GNSS</abbr></td>
+<td>EV Go-Kart using Autoware</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Software Stack:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Autoware</strong></td>
-<td>Autoware.universe</td>
-</tr>
-<tr>
-<td><strong>Architecture</strong></td>
-<td><a href="https://www.researchgate.net/journal/International-Journal-of-Artificial-Intelligence-and-Machine-Learning-2642-1585/publication/339274779_Autonomous_Last_Mile_Shuttle_ISEAUTO_for_Education_and_Research/links/6572efddfc4b416622a8247f/Autonomous-Last-Mile-Shuttle-ISEAUTO-for-Education-and-Research.pdf">ISEAUTO Paper (PDF)</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Highlights:</strong> First self-driving vehicle in Estonia; Level 4 shuttle built in one year using Autoware; V2X and teleoperation research platform.</p>
-<p><strong>Links:</strong> <a href="https://autolab.taltech.ee/portfolio/iseauto/">iseAuto Project</a> | <a href="https://autoware.org/autowareio/taltech/">TalTech Autoware Foundation</a></p>
-<hr>
-<h4 id="nc-at-aggie-auto">NC A&amp;T Aggie Auto<a class="headerlink" href="#nc-at-aggie-auto" title="Permanent link">#</a></h4>
-<p>Autonomous GEM shuttles at North Carolina A&amp;T State University.</p>
-<table>
-<thead>
-<tr>
-<th>Aspect</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Platform</strong></td>
-<td>GEM e6 electric vehicles</td>
-</tr>
-<tr>
-<td><strong>Sensors</strong></td>
-<td>Multi-sensor LiDAR suite, NovAtel <abbr title="Global Navigation Satellite System">GNSS</abbr> with dual antennas</td>
-</tr>
-<tr>
-<td><strong>Drive-by-wire</strong></td>
-<td>AutonomouStuff PACMod</td>
-</tr>
-<tr>
-<td><strong>Status</strong></td>
-<td>Public pilot program completed</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Software Stack:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Autoware</strong></td>
-<td>Autoware (open source)</td>
-</tr>
-<tr>
-<td><strong>Integration</strong></td>
-<td>AutonomouStuff Speed and Steering Control (SSC)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Highlights:</strong> SAE Level 4 autonomy; connected autonomous vehicle (CAV) testbed; 2-mile rural test track; public service connecting campus to downtown Greensboro.</p>
-<p><strong>Links:</strong> <a href="https://www.aggieauto.com/about">Aggie Auto Project</a> | <a href="https://autonomoustuff.com/products/case-studies/nc-a-and-t-state-university-autonomous-gem-shuttles">AutonomouStuff Case Study</a></p>
-<hr>
-<h4 id="kingwaytek-micro-lsv">KingWayTek Micro LSV<a class="headerlink" href="#kingwaytek-micro-lsv" title="Permanent link">#</a></h4>
-<p>Micro self-driving vehicles deployed in Taiwan for passenger transport and cargo delivery.</p>
-<table>
-<thead>
-<tr>
-<th>Aspect</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Platform</strong></td>
-<td>Custom micro EV (3380×1350×1850mm)</td>
-</tr>
-<tr>
-<td><strong>Max Speed</strong></td>
-<td>≤15 km/h</td>
-</tr>
-<tr>
-<td><strong>Autonomy Level</strong></td>
-<td>L4</td>
-</tr>
-<tr>
-<td><strong>Capacity</strong></td>
-<td>4-5 passengers or 350kg cargo</td>
-</tr>
-<tr>
-<td><strong>Range</strong></td>
-<td>50km</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Technology Stack:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Sensors</strong></td>
-<td>LiDAR, radar, cameras</td>
-</tr>
-<tr>
-<td><strong>Maps</strong></td>
-<td>HD Maps (centimeter-level precision)</td>
-</tr>
-<tr>
-<td><strong>Communication</strong></td>
-<td>C-V2X (4G/5G)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Highlights:</strong> First Taiwan Lantern Festival self-driving vehicle (2024); 400 trips serving 1,000+ passengers in 16 days; deployed at 13+ locations including TSMC Southern Taiwan Science Park.</p>
-<p><strong>Links:</strong> <a href="https://www.kingwaytek.com/eng/index.html">KingWayTek</a> | <a href="http://smartdriving.kingwaytek.com/en/index.html">Self-Driving Solutions</a> | <a href="../KWT_LSV/Kingway_LSV_introduction_ENG_0729AWF_v1.pdf">Introduction (PDF)</a></p>
-<hr>
-<h3 id="development-platforms">Development Platforms<a class="headerlink" href="#development-platforms" title="Permanent link">#</a></h3>
-<p>These platforms are designed for algorithm development, education, and prototyping:</p>
-<h4 id="go-kart-13-scale">Go-Kart (1/3 Scale)<a class="headerlink" href="#go-kart-13-scale" title="Permanent link">#</a></h4>
-<p>Human-rideable platform for software development and testing, developed by the Autoware Center of Excellence at University of Pennsylvania.</p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Choice</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Platform</strong></td>
-<td>TopKart chassis</td>
-</tr>
-<tr>
-<td><strong><abbr title="Electronic Control Unit">ECU</abbr></strong></td>
-<td>x86 laptop + NVIDIA <abbr title="Graphics Processing Unit">GPU</abbr></td>
-</tr>
-<tr>
-<td><strong>LiDAR</strong></td>
-<td>Ouster OS1</td>
-</tr>
-<tr>
-<td><strong>Camera</strong></td>
-<td>OAK-D (depth + on-device AI)</td>
-</tr>
-<tr>
-<td><strong><abbr title="Global Navigation Satellite System">GNSS</abbr></strong></td>
-<td>RTK-<abbr title="Global Navigation Satellite System">GNSS</abbr></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Software Stack:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong><abbr title="Robot Operating System">ROS</abbr> 2</strong></td>
-<td>Foxy / Humble</td>
-</tr>
-<tr>
-<td><strong>Control</strong></td>
-<td>Pure Pursuit, MPC</td>
-</tr>
-<tr>
-<td><strong>Sensor Code</strong></td>
-<td><a href="https://github.com/mlab-upenn/gokart-sensor">gokart-sensor</a></td>
-</tr>
-<tr>
-<td><strong>MCU Code</strong></td>
-<td><a href="https://github.com/mlab-upenn/gokart-mechatronics">gokart-mechatronics</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Best For:</strong> Algorithm development, SAE Level 0-3 testing</p>
-<p><strong>Documentation:</strong> <a href="../GoKart/">Go-Kart Details</a> | <a href="https://go-kart-upenn.readthedocs.io/">Project Docs</a> | <a href="https://github.com/mlab-upenn/Go-Kart">GitHub</a></p>
-<hr>
-<h4 id="roboracer-110-scale">RoboRacer (1/10 Scale)<a class="headerlink" href="#roboracer-110-scale" title="Permanent link">#</a></h4>
-<p>Lowest-cost entry point for learning autonomy.</p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Choice</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Platform</strong></td>
-<td>Traxxas Slash 4x4</td>
-</tr>
-<tr>
-<td><strong><abbr title="Electronic Control Unit">ECU</abbr></strong></td>
-<td>Jetson Xavier NX</td>
-</tr>
-<tr>
-<td><strong>LiDAR</strong></td>
-<td>Hokuyo UTM-30LX (2D)</td>
-</tr>
-<tr>
-<td><strong>Camera</strong></td>
-<td>ZED 2 or RealSense (optional)</td>
-</tr>
-<tr>
-<td><strong>Motor Control</strong></td>
-<td>VESC 6 MK III</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Software Stack:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong><abbr title="Robot Operating System">ROS</abbr> 2</strong></td>
-<td>Foxy</td>
-</tr>
-<tr>
-<td><strong>Simulator</strong></td>
-<td><a href="https://github.com/f1tenth/f1tenth_gym">RoboRacer Gym</a></td>
-</tr>
-<tr>
-<td><strong>Source Code</strong></td>
-<td><a href="https://github.com/f1tenth">GitHub</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Best For:</strong> Education, racing competitions, algorithm prototyping</p>
-<p><strong>Documentation:</strong> <a href="../RoboRacer/">RoboRacer Details</a> | <a href="https://roboracer.ai/">RoboRacer Portal</a> | <a href="https://roboracer.ai/learn">RoboRacer Learn</a></p>
-<hr>
-<h4 id="autosdv">AutoSDV<a class="headerlink" href="#autosdv" title="Permanent link">#</a></h4>
-<p>Home-buildable 1/10 scale platform with comprehensive documentation, developed by NEWSLab at National Taiwan University.</p>
-<table>
-<thead>
-<tr>
-<th>Model</th>
-<th>LiDAR</th>
-<th>Localization</th>
-<th>Connectivity</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Base</td>
-<td>None (camera only)</td>
-<td>Vision only</td>
-<td>Standard</td>
-</tr>
-<tr>
-<td>360° LiDAR</td>
-<td>Velodyne VLP-32C</td>
-<td>NDT (full autonomous)</td>
-<td>Standard</td>
-</tr>
-<tr>
-<td>Solid-State</td>
-<td>Seyond Robin-W (150m)</td>
-<td>Development needed</td>
-<td>Standard</td>
-</tr>
-<tr>
-<td>Connected</td>
-<td>Seyond Robin-W</td>
-<td>Development needed</td>
-<td>5G (Ataya/MOXA)</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Core Platform:</strong> Jetson AGX Orin 64GB, ZED X Mini stereo camera, Tekno TKR9500 chassis</p>
-<p><strong>Software Stack:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Component</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Autoware</strong></td>
-<td>Autoware.universe</td>
-</tr>
-<tr>
-<td><strong><abbr title="Robot Operating System">ROS</abbr> 2</strong></td>
-<td>Humble</td>
-</tr>
-<tr>
-<td><strong>Source Code</strong></td>
-<td><a href="https://github.com/NEWSLabNTU/AutoSDV">GitHub</a></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Best For:</strong> Self-learners, home projects, university courses</p>
-<p><strong>Documentation:</strong> <a href="../AutoSDV/">AutoSDV Details</a> | <a href="https://newslabntu.github.io/autosdv-book/">AutoSDV Book</a> | <a href="https://github.com/NEWSLabNTU/AutoSDV">GitHub</a></p>
-<hr>
-<h2 id="decision-criteria-reference">Decision Criteria Reference<a class="headerlink" href="#decision-criteria-reference" title="Permanent link">#</a></h2>
-<p>Use these tables to refine your configuration choice based on specific requirements.</p>
-<h3 id="by-environment">By Environment<a class="headerlink" href="#by-environment" title="Permanent link">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>Your Environment</th>
-<th>Recommended Configuration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Outdoor, paved, GPS available</td>
-<td>Campus or Budget</td>
-</tr>
-<tr>
-<td>Indoor, structured, GPS-denied</td>
-<td>Indoor</td>
-</tr>
-<tr>
-<td>Mixed indoor/outdoor</td>
-<td>Compact or High-Performance</td>
-</tr>
-</tbody>
-</table>
-<h3 id="by-speed-requirement">By Speed Requirement<a class="headerlink" href="#by-speed-requirement" title="Permanent link">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>Target Speed</th>
-<th>Recommended Configuration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;5 kph</td>
-<td>Indoor, Compact</td>
-</tr>
-<tr>
-<td>5-10 kph</td>
-<td>Budget, Campus</td>
-</tr>
-<tr>
-<td>10-15 kph</td>
-<td>Campus, High-Performance</td>
-</tr>
-<tr>
-<td>&gt;15 kph</td>
-<td>High-Performance (research only)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="by-budget">By Budget<a class="headerlink" href="#by-budget" title="Permanent link">#</a></h3>
-<table>
-<thead>
-<tr>
-<th>Budget Level</th>
-<th>Recommended Configuration</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Limited</td>
-<td>Budget</td>
-</tr>
-<tr>
-<td>Moderate</td>
-<td>Campus</td>
-</tr>
-<tr>
-<td>Flexible</td>
-<td>High-Performance</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="other-example-designs">Other Example Designs<a class="headerlink" href="#other-example-designs" title="Permanent link">#</a></h2>
-<p>For detailed documentation on specific platforms:</p>
-<ul>
-<li><a href="./RoboRacer/">RoboRacer</a> - Racing robots using Autoware</li>
-<li><a href="./GoKart/">Go-Kart</a> - EV Go-Kart using Autoware</li>
-<li><a href="./AutoSDV/">AutoSDV</a> - Home-buildable platform</li>
-<li><a href="../KWT_LSV/Kingway_LSV_introduction_ENG_0729AWF_v1.pdf">KWT LSV (PDF)</a> - Micro self-driving vehicles by KingWayTek</li>
-<li><a href="../system-configuration/index.md">System Configuration</a> - Hardware and software components for LSA vehicles</li>
-</ul>
-<hr>
-<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">#</a></h2>
-<ul>
-<li>Review <a href="../build-examples/">Design Choices by Example</a> for detailed component specifications</li>
-<li>Explore <a href="../hardware-configuration/index.md">Hardware Configuration</a> for <abbr title="Electronic Control Unit">ECU</abbr> and sensor options</li>
-<li>Follow <a href="../software-configuration/index.md">Software Configuration</a> for setup guides</li>
-</ul>
 <!-- prettier-ignore --></div>
 
 
