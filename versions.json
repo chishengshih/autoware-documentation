@@ -1,5 +1,10 @@
 [
   {
+    "version": "reference-design-documents",
+    "title": "reference-design-documents",
+    "aliases": []
+  },
+  {
     "version": "main",
     "title": "main",
     "aliases": []
@@ -7,11 +12,6 @@
   {
     "version": "latest",
     "title": "latest",
-    "aliases": []
-  },
-  {
-    "version": "reference-design-documents",
-    "title": "reference-design-documents",
     "aliases": []
   }
 ]
